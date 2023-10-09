@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* estilização da página por completp */
+body{
+    background-color: #000000;
+    font-size: 16px;
+}
+/*estilização do header */
+.header{
+    background-color: #1f1e1e;
+}
+/* estilização do container da nave*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around
+}
+/*titulos */
+h1{
+    color: blanchedalmond;
+}
+/* container do menu*/
+nav ul{
+    text-align: center;
+    text-decoration: none;
+    list-style: none; 
+    padding: 3%;
+}
+/* blocos do menu */
+nav ul li{
+    display: inline;
+
+}
+/* links do menu */
+nav ul li a{
+   text-decoration: none;
+   padding: 12px;
+   border: 1px solid ;
+   border-radius: 3px;
+   color: rgb(193, 123, 31);
+}
+nav ul li a:hover{
+    background-color: rgb(232, 198, 148);
+}
+/* seção sobre*/
+#sobre{
+    padding: 5%;
+}
+/*seção habilidades */
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+/*imagens das habilidades */
+#habilidades{
+    width: 7%;
+    height: 8%;
+    border-radius: 10px;
+   text-align: center;
+   
+}
+/* textos em geral*/
+p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(193, 123, 31);
+    margin-top: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+/* container dos projetos */
+.portifolio{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+    padding: 2%;
+}
+/* card projetos  */
+#projeto{
+    text-align: center;
+    
+} 
+/*img dos projetos */ 
+img{
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+   
+}
+.img:hover{
+    transform: scale(1.1); 
+    border: 2px solid rgb(193, 123, 31);
+}
+/*titulo das seções */
+h2{
+    text-align: center;
+    color:burlywood;
+    margin-top: 12px; 
+    font-size: 35px;
+}
+/*seção dos contatos */
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+/*cards do contato */
+#contato{
+    width: 7%;
+    height: 8%;
+    border-radius: 10px;
+}
+/* img dos contatos*/
+.logos{
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width: 768px){
+    .nav{
+        flex-direction: column;
+    }
+    #sobre{
+        flex-direction: column;
+        padding-left: none;
+        padding-right: 1px;
+    }
+    .habilidades{
+        flex-direction: row;
+
+    }
+    #projeto{
+        margin-top: 80px;
+    }
+    .portifolio{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .contato{
+        grid-template-columns: 1fr;
+    }
+    
+}
