@@ -57,6 +57,7 @@ nav ul li a:hover{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 5%;
+    margin-top: 20px;
 }
 /*imagens das habilidades */
 #habilidades{
@@ -66,14 +67,20 @@ nav ul li a:hover{
    text-align: center;
    
 }
+.skills{
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+}
 /* textos em geral*/
 p{
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
     color: rgb(193, 123, 31);
     margin-top: 15px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 /* container dos projetos */
 .portifolio{
@@ -88,16 +95,16 @@ p{
     
 } 
 /*img dos projetos */ 
-img{
+.sites{
     width: 70%;
     height: 80%;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
    
 }
-.img:hover{
+.sites:hover{
     transform: scale(1.1); 
-    border: 2px solid rgb(193, 123, 31);
+    border: 5px solid rgb(193, 123, 31);
 }
 /*titulo das seções */
 h2{
@@ -105,6 +112,12 @@ h2{
     color:burlywood;
     margin-top: 12px; 
     font-size: 35px;
+}
+h3{
+    color:rgb(193, 123, 31);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /*seção dos contatos */
 .contato{
@@ -124,6 +137,9 @@ h2{
     width: 50px;
     height: 50px;
 }
+.rodapé{
+    text-align: center;
+}
 
 @media(max-width: 768px){
     .nav{
@@ -136,7 +152,6 @@ h2{
     }
     .habilidades{
         flex-direction: row;
-
     }
     #projeto{
         margin-top: 80px;
@@ -147,6 +162,9 @@ h2{
     }
     .contato{
         grid-template-columns: 1fr;
+        
     }
-    
+    h2{
+        margin-top: 50px;
+    }
 }
